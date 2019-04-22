@@ -1,0 +1,138 @@
+/*common*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 56px;
+    color: #ccc;
+}
+
+.title{
+    text-align: center;
+    margin: 100px auto 20px;
+}
+
+/*banner*/
+#banner{
+    width: 100%;
+    height: 420px;
+    border-top: 7px solid yellow;
+    border-bottom: 7px solid yellow;
+    box-shadow: 0px 0px 7px black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/*bannerBg*/
+.bannerBg{
+    background: url("../images/bg.png") repeat;
+}
+
+.bannerBg div{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:420px;
+}
+
+.bannerBg01{
+    background: url("../images/bg1.png");
+}
+
+.bannerBg02{
+    background: url("../images/bg2.png");
+}
+
+.bannerBg03{
+    background: url("../images/bg3.png");
+}
+/*bannerBg结束*/
+
+/*loading*/
+.banner_loading{
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 15px 15px 15px 50px;
+    background: url("../images/ajax-loader.gif") no-repeat 10px 50%;
+    border-radius: 15px;
+    width: 180px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -90px;
+}
+/*loading结束*/
+
+/*banner_content*/
+.banner_content{
+    display: none;
+}
+
+.banner_content ul{
+    list-style: none;
+    position: absolute;
+}
+
+ul.banner_images li{
+    float: left;
+    height: 420px;
+}
+
+ul.banner_images li img{
+    display: block;
+    margin: 30px auto 0px;
+    box-shadow: 0px 0px 7px #222;
+    border: 8px solid transparent;
+    border-radius: 4px;
+}
+
+.bannerGuide span{
+    background-color: red;
+    width: 30px;
+    height: 60px;
+    box-shadow: 0px 0px 7px yellow;
+    position: absolute;
+    top: 145px;
+    /*opacity: 0.6;*/
+    border-radius: 4px;
+    /*光标为一只手的形状*/
+    cursor:pointer;
+}
+
+.bannerGuide span:hover{
+    opacity: 0.9;
+}
+
+.bannerGuide span.bannerGuide_last{
+    background: #000 url("../images/prev.png") no-repeat center center;
+}
+
+.bannerGuide span.bannerGuide_next{
+    background: #000 url("../images/next.png") no-repeat center center;
+}
+
+ul.banner_thumbnails{
+    height: 35px;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+}
+
+ul.banner_thumbnails li{
+    position: absolute;
+}
+
+ul.banner_thumbnails li img{
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 0px 7px red;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+ul.banner_thumbnails li.selected img{
+    opacity: 0.9;
+}
+/*banner_content结束*/
